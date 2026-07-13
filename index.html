@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fashion Queen</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#fff7f8;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#ff4d79;
+    padding:15px 8%;
+}
+
+nav h2{
+    color:white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero{
+    height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+    url("https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1400&q=80");
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:20px;
+}
+
+.hero button{
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    background:#ff4d79;
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.products{
+    padding:60px 8%;
+}
+
+.products h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.container{
+    display:flex;
+    gap:25px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:250px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:10px;
+}
+
+.card p{
+    padding:0 10px;
+    color:#666;
+}
+
+.card button{
+    margin:15px;
+    padding:10px 20px;
+    border:none;
+    background:#ff4d79;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.about{
+    padding:60px 10%;
+    text-align:center;
+    background:#ffe4ec;
+}
+
+footer{
+    background:#ff4d79;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:35px;
+}
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+margin-top:15px;
+}
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+<h1>Latest Women's Fashion Collection</h1>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Shop</a></li>
+<li><a href="#">Collections</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+<h1>Women's Fashion Collection</h1>
+<p>Discover the latest styles with exclusive offers.</p>
+<button onclick="shopNow()">Shop Now</button>
+</section>
+
+<section class="products">
+
+<h2>Featured Products</h2>
+
+<div class="container">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=600&q=80">
+<h3>Elegant Dress</h3>
+<p>₹1,999</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80">
+<h3>Stylish Handbag</h3>
+<p>₹999</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80">
+<h3>Fashion Shoes</h3>
+<p>₹2,499</p>
+<button>Add to Cart</button>
+</div>
+
+</div>
+
+</section>
+
+<section class="about">
+
+<h2>About Us</h2>
+
+<p>
+Fashion Queen brings you trendy clothing, handbags,
+footwear and accessories with premium quality at affordable prices.
+</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Fashion Queen | Women's Fashion Store</p>
+
+</footer>
+
+<script>
+
+function shopNow(){
+alert("Welcome to Fashion Queen!");
+}
+
+</script>
+
+</body>
+</html>
